@@ -1,0 +1,618 @@
+{
+  "moduleInfo": {
+    "moduleName": "AnimeSuge",
+    "moduleInitials": "AS",
+    "moduleDesc": "AnimeSuge module. It's as simple as that",
+    "developer": "God",
+    "moduleID": "abc123",
+    "moduleImage": "data:image/png;base64,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",
+    "moduleVersion": 1.0,
+    "moduleLenguage": "ENG",
+    "moduleType": "Video",
+    "baseURL": "animesuge.io",
+    "moduleDeveloperSite": "https://github.com/Ex-Devil/Ketsu-Modules",
+    "UpdateSite": "",
+    "preferedServer": "",
+    "preferedDownloadServer": "",
+    "blackListed": [
+      ""
+    ]
+  },
+  "global": {
+    "variables": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "cookies": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "headers": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ]
+  },
+  "mainPage": [
+    {
+      "request": {
+        "url": "",
+        "method": "get",
+        "headers": [
+          {
+            "key": "",
+            "value": ""
+          }
+        ],
+        "httpBody": null
+      },
+      "extra": {
+        "commands": [
+          {
+            "commandName": "",
+            "params": [
+              {
+                "key": "",
+                "value": ""
+              }
+            ]
+          }
+        ],
+        "extraInfo": [
+          {
+            "key": "",
+            "value": ""
+          }
+        ]
+      },
+      "javascriptConfig": {
+        "removeJavascript": true,
+        "loadInWebView": false,
+        "javaScript": ""
+      },
+      "output": [
+        {
+          "cellDesing": "normal1",
+          "orientation": "vertical",
+          "defaultLayout": "wide",
+          "paging": "",
+          "section": {
+            "sectionName": "",
+            "separator": false
+          },
+          "layout": {
+            "insets": {
+              "top": 0,
+              "bottom": 0,
+              "left": 0,
+              "right": 0
+            },
+            "visibleCellsWidthS": 2,
+            "visibleCellsWidthM": 2,
+            "visibleCellsWidthL": 2,
+            "visibleCellsHeight": 2,
+            "heightForVisibleCells": 400,
+            "cellSize": {
+              "width": 300,
+              "height": 300
+            },
+            "ratio": {
+              "inRelation": "width",
+              "number1": 1,
+              "number2": 2
+            },
+            "constant": {
+              "width": 1,
+              "height": 2
+            },
+            "horizontalSpacing": 0,
+            "verticalSpacing": 0
+          },
+          "data": [
+            {
+              "image": {
+                "url": "",
+                "method": "get",
+                "headers": [
+                  {
+                    "key": "",
+                    "value": ""
+                  }
+                ],
+                "httpBody": null
+              },
+              "title": "",
+              "description": "",
+              "field1": "",
+              "field2": "",
+              "field3": "",
+              "field4": "",
+              "openInWebView" : false,
+              "isChapter": false,
+              "link": {
+                "url": "",
+                "method": "",
+                "headers": [
+                  {
+                    "key": "",
+                    "value": ""
+                  }
+                ],
+                "httpBody": null
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "search": [
+    {
+      "request": {
+        "url": "animesuge.io",
+        "method": "get",
+        "headers": [
+          {
+            "key": "",
+            "value": ""
+          }
+        ],
+        "httpBody": null
+      },
+      "separator": "",
+      "extra": {
+        "commands": [
+          {
+            "commandName": "",
+            "params": [
+              {
+                "key": "",
+                "value": ""
+              }
+            ]
+          }
+        ],
+        "extraInfo": [
+          {
+            "key": "",
+            "value": ""
+          }
+        ]
+      },
+      "javascriptConfig": {
+        "removeJavascript": true,
+        "loadInWebView": false,
+        "javaScript": ""
+      },
+      "output": [
+        {
+          "cellDesing": "normal1",
+          "orientation": "vertical",
+          "defaultLayout": "wide",
+          "paging": "",
+          "section": {
+            "sectionName": "",
+            "separator": false
+          },
+          "layout": {
+            "insets": {
+              "top": 0,
+              "bottom": 0,
+              "left": 0,
+              "right": 0
+            },
+            "visibleCellsWidthS": 2,
+            "visibleCellsWidthM": 2,
+            "visibleCellsWidthL": 2,
+            "visibleCellsHeight": 2,
+            "heightForVisibleCells": 400,
+            "cellSize": {
+              "width": 300,
+              "height": 300
+            },
+            "ratio": {
+              "inRelation": "width",
+              "number1": 1,
+              "number2": 2
+            },
+            "constant": {
+              "width": 1,
+              "height": 2
+            },
+            "horizontalSpacing": 0,
+            "verticalSpacing": 0
+          },
+          "data": [
+            {
+              "image": {
+                "url": "",
+                "method": "get",
+                "headers": [
+                  {
+                    "key": "",
+                    "value": ""
+                  }
+                ],
+                "httpBody": null
+              },
+              "title": "",
+              "description": "",
+              "field1": "",
+              "field2": "",
+              "field3": "",
+              "field4": "",
+              "openInWebView" : false,
+              "isChapter": false,
+              "link": {
+                "url": "empty",
+                "method": "get",
+                "headers": [
+                  {
+                    "key": "key",
+                    "value": "value"
+                  }
+                ],
+                "httpBody": null
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "info": [
+    {
+      "request": {
+        "url": "",
+        "method": "get",
+        "headers": [
+          {
+            "key": "",
+            "value": ""
+          }
+        ],
+        "httpBody": null
+      },
+      "extra": {
+        "commands": [
+          {
+            "commandName": "",
+            "params": [
+              {
+                "key": "",
+                "value": ""
+              }
+            ]
+          }
+        ],
+        "extraInfo": [
+          {
+            "key": "",
+            "value": ""
+          }
+        ]
+      },
+      "javascriptConfig": {
+        "removeJavascript": true,
+        "loadInWebView": false,
+        "javaScript": " "
+      },
+      "output": {
+        "image": {
+          "url": "",
+          "method": "get",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "httpBody": null
+        },
+        "link": {
+          "url": "",
+          "method": "get",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "httpBody": null
+        },
+        "title": "",
+        "description": "",
+        "genres": [
+          ""
+        ],
+        "field1": "",
+        "field2": "",
+        "field3": "",
+        "field4": "",
+        "chapters": [
+          {
+            "chapName": "",
+            "openInWebView": false,
+            "link": {
+              "url": "empty",
+              "method": "get",
+              "headers": [
+                {
+                  "key": "key",
+                  "value": "value"
+                }
+              ],
+              "httpBody": null
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "request": {
+        "url": "",
+        "method": "get",
+        "headers": [
+          {
+            "key": "key",
+            "value": "value"
+          }
+        ],
+        "httpBody": null
+      },
+      "extra": {
+        "commands": [
+          {
+            "commandName": "",
+            "params": [
+              {
+                "key": "",
+                "value": ""
+              }
+            ]
+          }
+        ],
+        "extraInfo": [
+          {
+            "key": "",
+            "value": ""
+          }
+        ]
+      },
+      "javascriptConfig": {
+        "removeJavascript": true,
+        "loadInWebView": false,
+        "javaScript": " "
+      },
+      "output": {
+        "videos": {
+          "needsResolver": [
+            {
+              "resolverIdentifier": "",
+              "link": {
+                "url": "",
+                "method": "get",
+                "headers": [
+                  {
+                    "key": "key",
+                    "value": "value"
+                  }
+                ],
+                "httpBody": null
+              }
+            }
+          ],
+          "rawVideo": [
+            {
+              "video": [
+                {
+                  "videoQuality": "",
+                  "videoLink": {
+                    "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+                    "method": "get",
+                    "headers": [
+                      {
+                        "key": "key",
+                        "value": "value"
+                      }
+                    ],
+                    "httpBody": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "images": [
+          {
+            "url": "empty",
+            "method": "get",
+            "headers": [
+              {
+                "key": "key",
+                "value": "value"
+              }
+            ],
+            "httpBody": null
+          }
+        ],
+        "text": {
+          "text": ""
+        }
+      }
+    }
+  ],
+  "moduleResolvers": [
+    {
+      "resolverInfo": {
+        "resolverName": "",
+        "nameMatches": [
+          ""
+        ],
+        "developer": "",
+        "moduleID": "",
+        "resolverVersion": 1,
+        "baseURL": ""
+      },
+      "resolver": [
+        {
+          "request": {
+            "url": "",
+            "method": "get",
+            "headers": [
+              {
+                "key": "key",
+                "value": "value"
+              }
+            ],
+            "httpBody": null
+          },
+          "extra": {
+            "commands": [
+              {
+                "commandName": "",
+                "params": [
+                  {
+                    "key": "",
+                    "value": ""
+                  }
+                ]
+              }
+            ],
+            "extraInfo": [
+              {
+                "key": "",
+                "value": ""
+              }
+            ]
+          },
+          "javascriptConfig": {
+            "removeJavascript": false,
+            "loadInWebView": false,
+            "javaScript": ""
+          },
+          "output": {
+            "moduleID": "",
+            "video": [
+              {
+                "videoQuality": "720",
+                "videoLink": {
+                  "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+                  "method": "get",
+                  "headers": [
+                    {
+                      "key": "key",
+                      "value": "value"
+                    }
+                  ],
+                  "httpBody": null
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "responseCodeFunctions": [
+    {
+      "code": 0,
+      "msgTitle": "",
+      "msgBody": "",
+      "type": "normal",
+      "functions": [
+        {
+          "request": {
+            "url": "empty",
+            "method": "get",
+            "headers": [
+              {
+                "key": "key",
+                "value": "value"
+              }
+            ],
+            "httpBody": null
+          },
+          "extra": {
+            "commands": [
+              {
+                "commandName": "",
+                "params": [
+                  {
+                    "key": "",
+                    "value": ""
+                  }
+                ]
+              }
+            ],
+            "extraInfo": [
+              {
+                "key": "",
+                "value": ""
+              }
+            ]
+          },
+          "javascriptConfig": {
+            "removeJavascript": true,
+            "loadInWebView": false,
+            "javaScript": ""
+          }
+        }
+      ]
+    }
+  ],
+  "helperFunctions": [
+    {
+      "functionName": "example",
+      "msgTitle": "",
+      "msgBody": "",
+      "type": "normal",
+      "functions": [
+        {
+          "request": {
+            "url": "empty",
+            "method": "get",
+            "headers": [
+              {
+                "key": "key",
+                "value": "value"
+              }
+            ],
+            "httpBody": null
+          },
+          "extra": {
+            "commands": [
+              {
+                "commandName": "",
+                "params": [
+                  {
+                    "key": "",
+                    "value": ""
+                  }
+                ]
+              }
+            ],
+            "extraInfo": [
+              {
+                "key": "",
+                "value": ""
+              }
+            ]
+          },
+          "javascriptConfig": {
+            "removeJavascript": true,
+            "loadInWebView": false,
+            "javaScript": ""
+          }
+        }
+      ]
+    }
+  ]
+}
